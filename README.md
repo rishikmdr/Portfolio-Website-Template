@@ -31,6 +31,6 @@ python3 -m http.server 8000
 
 ## Personalize
 
-- `images/hero.png` (1000 × 1194) and `images/profile.png` (square) are placeholder graphics. Replace them with your own photos using the same file names.
+- `images/hero.webp` (1000 × 1194) and `images/profile.png` (square) are placeholder graphics. Replace them with your own photos using the same file names.
 - Example deliverables for the consulting page live in `images/work/`. For the other services, put images in `images/work/<page-name>/` and copy the "What you receive" block from `consulting.html` into the marked spot in that page.
 - Page text, prices and links are in the `.html` files; shared styles are in `css/custom.css`.
