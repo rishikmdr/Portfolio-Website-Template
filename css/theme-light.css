@@ -1,0 +1,180 @@
+/* Light theme. Loaded last on every page, so it overrides the template's dark colors.
+   To go back to the dark theme, remove the <link> to this file. */
+
+:root {
+  --bg: #fbfaf7;          /* page background */
+  --surface: #ffffff;     /* cards */
+  --surface-alt: #f3f0e9; /* alternate section background */
+  --border: #e7e2d7;
+  --text: #1f2328;
+  --muted: #5d636b;
+  --accent: #ffbd39;      /* fills: buttons, bars, dots */
+  --accent-ink: #a5680a;  /* accent used as text, readable on white */
+}
+
+/* ---------- Base ---------- */
+body { background: var(--bg) !important; color: var(--muted); }
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 { color: var(--text); }
+a { color: var(--accent-ink); }
+a:hover { color: var(--text); }
+p { color: var(--muted); }
+#ftco-loader, #ftco-loader.fullscreen { background-color: var(--bg); }
+
+/* ---------- Navigation ---------- */
+.ftco-navbar-light, .ftco-navbar-light.scrolled {
+  background: rgba(251, 250, 247, 0.96) !important;
+  border-bottom: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.ftco-navbar-light .navbar-brand, .ftco-navbar-light.scrolled .navbar-brand,
+.ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus { color: var(--text) !important; }
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link,
+.ftco-navbar-light.scrolled .nav-item > .nav-link,
+.ftco-navbar-light.scrolled .nav-link { color: var(--text) !important; }
+.ftco-navbar-light .navbar-nav > .nav-item.active > a,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active { color: var(--accent-ink) !important; }
+.ftco-navbar-light .navbar-toggler, .ftco-navbar-light.scrolled .navbar-toggler { color: var(--text) !important; }
+@media (max-width: 991.98px) {
+  .ftco-navbar-light .navbar-collapse { background: var(--bg); }
+}
+
+/* ---------- Buttons ---------- */
+.btn.btn-primary { color: #1f2328 !important; }
+.btn.btn-white.btn-outline-white {
+  border-color: var(--text) !important;
+  color: var(--text) !important;
+  background: transparent !important;
+}
+.btn.btn-white.btn-outline-white:hover { background: var(--text) !important; color: #fff !important; }
+
+/* ---------- Hero ---------- */
+.owl-carousel.home-slider .slider-item { background: var(--bg); }
+.slider-text h1 { color: var(--text); }
+.owl-carousel.home-slider .slider-item .slider-text h1 span { color: var(--accent-ink); }
+.owl-carousel.home-slider .slider-item .slider-text h2,
+.owl-carousel.home-slider .slider-item .slider-text p { color: var(--text); }
+.owl-carousel.home-slider .slider-item .slider-text .subheading { color: var(--accent-ink); }
+.typing-animation { color: var(--text); }
+@media (max-width: 991.98px) {
+  /* text sits over the graphic on small screens: soften the graphic */
+  .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay { background: var(--bg); opacity: .72; }
+}
+
+/* ---------- Section headings ---------- */
+.heading-section h2 { color: var(--text); }
+.heading-section p { color: var(--muted); }
+.sub-heading h3 { color: var(--text); }
+.underline { background: linear-gradient(90deg, transparent, var(--accent), transparent) !important; }
+
+/* ---------- About ---------- */
+.ftco-about ul.about-info li span { color: var(--muted); }
+.ftco-about ul.about-info li span:first-child,
+.ftco-about .counter-wrap .text p span { color: var(--text); }
+.ftco-about .counter-wrap .text p span.number { color: var(--accent-ink); }
+.about-info p, .about-info span, .title-s, .skill-mf span { color: var(--text); }
+.progress { background: #ece7dc !important; }
+
+/* ---------- Service cards (home) ---------- */
+.services-1 {
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px -28px rgba(31, 35, 40, 0.35) !important;
+}
+.services-1 .icon i { color: var(--accent); }
+.services-1 .desc h3, .services-1 .desc h3 a { color: var(--text); }
+.services-1 .desc p, .services-1 ul { color: var(--muted); }
+.services-1 .step { color: var(--accent-ink); }
+.services-1 .price { color: var(--accent-ink); }
+.services-1 .price small { color: var(--muted); }
+.services-1 .more { color: var(--text); }
+.services-1:hover { background: var(--accent) !important; border-color: var(--accent); }
+.services-1:hover .icon i { color: var(--text); }
+.services-1:hover .desc p, .services-1:hover ul, .services-1:hover .price,
+.services-1:hover .price small, .services-1:hover .step, .services-1:hover .more,
+.services-1:hover h3 { color: var(--text) !important; }
+
+/* ---------- Experience ---------- */
+.resume-wrap {
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px -30px rgba(31, 35, 40, 0.35);
+}
+.resume-wrap .date { color: var(--accent-ink); }
+.resume-wrap h2 { color: var(--text); }
+.resume-wrap .position { color: var(--muted); }
+.resume-wrap ul li, .resume-wrap p { color: var(--muted); }
+
+/* ---------- Counters and banner ---------- */
+.ftco-counter .block-18 { background: var(--surface) !important; border: 1px solid var(--border); }
+.ftco-counter .text strong.number { color: var(--accent-ink); }
+.ftco-counter .text span { color: var(--muted); }
+.ftco-hireme {
+  background-image: none !important;
+  background: linear-gradient(135deg, #fff4dc 0%, #f3f0e9 100%) !important;
+}
+.ftco-hireme h2, .ftco-hireme h4 { color: var(--text); }
+.ftco-hireme h2 span { color: var(--accent-ink); }
+
+/* ---------- Contact ---------- */
+.contact-section .box { background: var(--surface); border: 1px solid var(--border); }
+.contact-section .box h3 { color: var(--text); }
+.contact-section .box p, .contact-section .contact-info p a { color: var(--muted); }
+.contact-section .box .icon { background: #fff4dc !important; }
+.contact-section .box .icon span { color: var(--accent-ink); }
+.contact-section h2 span { color: var(--accent-ink); }
+.ftco-footer-social li a { background: #fff4dc !important; }
+.ftco-footer-social li a span { color: var(--accent-ink); }
+.normal-txt { color: var(--muted); }
+
+/* ---------- Footer ---------- */
+.ftco-footer { background: var(--surface-alt) !important; border-top: 1px solid var(--border); }
+.ftco-footer p, .ftco-footer a { color: var(--muted); }
+.ftco-footer a:hover { color: var(--text); }
+
+/* ---------- Service pages ---------- */
+.page-hero { background: radial-gradient(ellipse at 75% 10%, #fff1d1 0%, var(--bg) 60%); }
+.page-hero .crumbs { color: var(--muted); }
+.page-hero .crumbs a { color: var(--accent-ink); }
+.page-hero h1 { color: var(--text); }
+.page-hero h1 span { color: var(--accent-ink); }
+.page-hero .lead { color: var(--muted); }
+.page-hero .range { border-color: var(--accent); color: var(--accent-ink); background: #fff8e8; }
+
+.detail-section h2 { color: var(--text); }
+.detail-section p, .detail-section li { color: var(--muted); }
+.detail-section[style] { background: var(--surface-alt) !important; }
+.check-list li:before { color: var(--accent-ink); }
+
+.deliverable h3 { color: var(--text); }
+.deliverable p { color: var(--muted); }
+.deliverable img { box-shadow: 0 20px 40px -24px rgba(31, 35, 40, 0.45); }
+
+.package { background: var(--surface); border: 1px solid var(--border); box-shadow: 0 18px 40px -30px rgba(31, 35, 40, 0.35); }
+.package.featured { border-top: 3px solid var(--accent); }
+.package .tier, .package .delivery { color: var(--muted); }
+.package .amount { color: var(--accent-ink); }
+.package ul li { color: var(--muted); }
+
+.step-item h3 { color: var(--text); }
+.step-item:before { color: var(--text); }
+
+.case-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); }
+.case-card .tag { color: var(--accent-ink); }
+.case-card h3 { color: var(--text); }
+.case-card .client, .case-card dt, .illustrative-note { color: var(--muted); }
+.case-card dd { color: var(--text); }
+
+.cta-band { background: var(--surface-alt); }
+.cta-band h2 { color: var(--text); }
+.cta-band h2 span { color: var(--accent-ink); }
+
+.other-service { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); color: var(--text); }
+.other-service:hover { background: var(--accent); color: var(--text); }
+
+/* Higher-specificity fixes for template rules */
+.owl-carousel.home-slider .slider-item .slider-text h1 { color: var(--text) !important; }
+.owl-carousel.home-slider .slider-item .slider-text h1 span { color: var(--accent-ink) !important; }
+.services-1 .desc span.step, .services-1 .desc span.more { color: var(--accent-ink); }
+.services-1:hover .desc span.step, .services-1:hover .desc span.more { color: var(--text); }
