@@ -23,103 +23,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-<style>
-
-html, body { overflow-x: hidden; }
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-.skill-mf .progress {
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-/* Typing animation */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-  white-space: nowrap;
-  min-height: 45px;
-  display: inline-block;
-}
-
-#typing-animation::after {
-  content: "|";
-  color: #ffbd39;
-  margin-left: 2px;
-  animation: blink 0.8s step-end infinite;
-}
-
-@keyframes blink { 50% { opacity: 0; } }
-
-/* Services */
-.services-1 { height: 100%; display: flex; flex-direction: column; }
-.services-1 .desc { flex: 1; display: flex; flex-direction: column; }
-.services-1 .desc p { color: rgba(255,255,255,.7); font-size: 15px; margin-top: 30px; }
-.services-1 .price {
-  margin-top: auto;
-  padding-top: 18px;
-  font-size: 22px;
-  font-weight: 600;
-  color: #ffbd39;
-}
-.services-1 .price small { display: block; font-size: 12px; font-weight: 400; color: rgba(255,255,255,.6); letter-spacing: 1px; text-transform: uppercase; }
-.services-1 .step { font-size: 12px; letter-spacing: 3px; color: rgba(255,255,255,.5); text-transform: uppercase; }
-.services-1:hover .desc p, .services-1:hover .price, .services-1:hover .price small, .services-1:hover .step { color: #000; }
-.services-1 ul { padding-left: 18px; text-align: left; color: rgba(255,255,255,.75); font-size: 14px; }
-.services-1:hover ul { color: #000; }
-
-/* Deliverable images and sample engagements */
-.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
-.zoom-effect:hover { transform: scale(1.04); }
-.deliverable img { width: 100%; border-radius: 6px; box-shadow: 0 20px 40px -20px rgba(0,0,0,.6); }
-.deliverable h3 { font-size: 18px; margin-top: 18px; color: #fff; }
-.deliverable p { color: rgba(255,255,255,.65); font-size: 15px; }
-
-.case-card {
-  background: rgba(255,255,255,.05);
-  border-left: 3px solid #ffbd39;
-  padding: 26px 26px 18px;
-  margin-bottom: 30px;
-  width: 100%;
-}
-.case-card .tag {
-  display: inline-block;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffbd39;
-  margin-bottom: 8px;
-}
-.case-card h3 { font-size: 19px; color: #fff; margin-bottom: 4px; }
-.case-card .client { font-size: 14px; color: rgba(255,255,255,.55); display: block; margin-bottom: 14px; }
-.case-card dl { margin: 0; }
-.case-card dt { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,.5); font-weight: 500; }
-.case-card dd { color: rgba(255,255,255,.85); font-size: 15px; margin-bottom: 10px; }
-.illustrative-note { color: rgba(255,255,255,.5); font-size: 14px; }
-
-.resume-wrap ul { padding-left: 18px; }
-
-@media (max-width: 767px) {
-  #home-section .slider-text .text h2 { font-size: 20px !important; line-height: 1.5; }
-  .about-mf .about-img img { max-width: 160px; margin: 0 auto; display: block; }
-  .about-info p { margin-bottom: 6px; }
-}
-</style>
+<link rel="stylesheet" href="css/custom.css">
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -136,7 +40,6 @@ html, body { overflow-x: hidden; }
             <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
             <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
             <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-            <li class="nav-item"><a href="#work-section" class="nav-link"><span>Work</span></a></li>
             <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
             <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
           </ul>
@@ -160,7 +63,7 @@ html, body { overflow-x: hidden; }
                   <span class="subheading">Hello!</span>
                   <h1 class="mb-4 mt-3">I'm <span>Sahil Kamdar</span></h1>
 
-                  <span id="typing-animation"></span>
+                  <span class="typing-animation" aria-label="AI Consultant, Data Strategist, AI Workflow Designer, Solution Builder"></span>
 
                   <br><br>
                   <h2>I map how your business runs, design the AI workflows that save time, and build them.</h2>
@@ -234,7 +137,6 @@ html, body { overflow-x: hidden; }
             <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
               <div class="row justify-content-start pb-3">
                 <div class="col-md-12 heading-section ftco-animate">
-                  <h1 class="big">About</h1>
                   <h2 class="mb-4">About Me</h2>
 
                   <p>Everyone is told to "use AI". Few businesses know where it actually pays off. I help founders and teams answer that question and then act on it.</p>
@@ -270,14 +172,13 @@ html, body { overflow-x: hidden; }
       <div class="container">
         <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Services</h1>
             <h2 class="mb-4">How I can help</h2>
-            <p>Start with a call or an audit. Get a clear plan. Then let me build it, or hand the blueprint to your own team.</p>
+            <p>Start with a call or an audit. Get a clear plan. Then let me build it, or hand the blueprint to your own team. Tap a service to see packages, deliverables and examples.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="services-1 text-center">
+            <a href="consulting.html" class="services-1 text-center">
               <span class="icon"><i class="icon-comments"></i></span>
               <div class="desc">
                 <span class="step">Advice</span>
@@ -289,11 +190,12 @@ html, body { overflow-x: hidden; }
                   <li>Monthly advisor option</li>
                 </ul>
                 <div class="price"><small>From</small>$49</div>
+                <span class="more">View details &rarr;</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="services-1 text-center">
+            <a href="ai-audit.html" class="services-1 text-center">
               <span class="icon"><i class="icon-search"></i></span>
               <div class="desc">
                 <span class="step">Step 1</span>
@@ -305,11 +207,12 @@ html, body { overflow-x: hidden; }
                   <li>Quick wins for this week</li>
                 </ul>
                 <div class="price"><small>From</small>$49</div>
+                <span class="more">View details &rarr;</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="services-1 text-center">
+            <a href="ai-workflow-blueprint.html" class="services-1 text-center">
               <span class="icon"><i class="icon-sitemap"></i></span>
               <div class="desc">
                 <span class="step">Step 2</span>
@@ -321,11 +224,12 @@ html, body { overflow-x: hidden; }
                   <li>Rollout plan</li>
                 </ul>
                 <div class="price"><small>From</small>$99</div>
+                <span class="more">View details &rarr;</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="services-1 text-center">
+            <a href="ai-solution-build.html" class="services-1 text-center">
               <span class="icon"><i class="icon-cogs"></i></span>
               <div class="desc">
                 <span class="step">Step 3</span>
@@ -337,92 +241,9 @@ html, body { overflow-x: hidden; }
                   <li>Data pipelines &amp; dashboards</li>
                 </ul>
                 <div class="price"><small>From</small>$150</div>
+                <span class="more">View details &rarr;</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ WORK ============ -->
-    <section class="ftco-section ftco-no-pt" id="work-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-8 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Work</h1>
-            <h2 class="mb-4">What you receive</h2>
-            <p>Every engagement ends with documents you can act on. Click an example to enlarge it.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 ftco-animate deliverable">
-            <a href="images/work/call-summary.png" class="image-popup zoom-effect d-block"><img src="images/work/call-summary.png" alt="Example call summary with recommendation and next steps"></a>
-            <h3>Call summary &amp; next steps</h3>
-            <p>Sent within 24 hours of every call: decisions, a clear recommendation, and who does what by when.</p>
-          </div>
-          <div class="col-md-4 ftco-animate deliverable">
-            <a href="images/work/tool-recommendation.png" class="image-popup zoom-effect d-block"><img src="images/work/tool-recommendation.png" alt="Example tool and vendor comparison"></a>
-            <h3>Tool &amp; vendor recommendation</h3>
-            <p>Options compared side by side on cost, setup time, skills and fit, so you see why one wins.</p>
-          </div>
-          <div class="col-md-4 ftco-animate deliverable">
-            <a href="images/work/roadmap.png" class="image-popup zoom-effect d-block"><img src="images/work/roadmap.png" alt="Example 90-day AI roadmap"></a>
-            <h3>Phased roadmap</h3>
-            <p>What happens when, who owns it, and the target each phase must hit before you spend more.</p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5 mb-4">
-          <div class="col-md-8 heading-section text-center ftco-animate">
-            <h2 class="mb-3">Sample engagements</h2>
-            <p class="illustrative-note">Illustrative examples with fictional company names, showing the kind of work each service covers.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 d-flex ftco-animate">
-            <div class="case-card">
-              <span class="tag">AI Opportunity Audit</span>
-              <h3>Where can AI save a freight forwarder time?</h3>
-              <span class="client">Freight forwarder · 40 staff</span>
-              <dl>
-                <dt>Found</dt><dd>22 hours a week spent copying WhatsApp and email inquiries into Excel and building quotes by hand.</dd>
-                <dt>Recommended</dt><dd>AI inquiry capture, an automatic quote generator and a shipment-status bot.</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex ftco-animate">
-            <div class="case-card">
-              <span class="tag">AI Workflow Blueprint</span>
-              <h3>From inquiry to quote in 15 minutes</h3>
-              <span class="client">Freight forwarder · n8n, Claude API, Google Sheets, Gmail</span>
-              <dl>
-                <dt>Workflow</dt><dd>Inquiry arrives → AI pulls route, cargo and dates → rate lookup → draft quote → salesperson approves → sent.</dd>
-                <dt>Target</dt><dd>Quote time from 4 hours to 15 minutes, at about $40 a month to run.</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex ftco-animate">
-            <div class="case-card">
-              <span class="tag">Data &amp; AI Solution Build</span>
-              <h3>A WhatsApp document assistant for loan files</h3>
-              <span class="client">Loan agency · 3 branches · WhatsApp, n8n, OpenAI, Zoho CRM, Power BI</span>
-              <dl>
-                <dt>Built</dt><dd>An assistant that collects documents, checks completeness, flags gaps and updates the CRM, plus a dashboard of files by stage.</dd>
-                <dt>Target</dt><dd>Missing-document delays down from 3 days to the same day.</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex ftco-animate">
-            <div class="case-card">
-              <span class="tag">Data &amp; AI Consulting</span>
-              <h3>Choosing a data platform for 12 lab branches</h3>
-              <span class="client">Diagnostics chain · monthly advisor</span>
-              <dl>
-                <dt>Advised</dt><dd>Reviewed two vendor quotes and compared four platform options on cost, setup time, skills and fit.</dd>
-                <dt>Outcome</dt><dd>Azure plus Power BI at half the cost of the custom quote, with a 6-month delivery and hiring plan.</dd>
-              </dl>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -433,15 +254,13 @@ html, body { overflow-x: hidden; }
       <div class="container">
         <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Experience</h1>
-            <h2 class="mb-4">Experience</h2>
+            <h2 class="mb-4">My journey</h2>
             <p>17+ years in enterprise data, analytics and AI: running programs end to end, from scoping and proposals to delivery, team allocation and revenue tracking.</p>
           </div>
         </div>
 
         <div class="row">
-          <h1 class="big-4">Experience</h1>
-          <div class="underline"></div>
+          <div class="sub-heading"><h3>Experience</h3><div class="underline"></div></div>
         </div>
         <br>
 
@@ -480,8 +299,7 @@ html, body { overflow-x: hidden; }
         <br><br>
 
         <div class="row">
-          <h1 class="big-4">Education &amp; Certification</h1>
-          <div class="underline"></div>
+          <div class="sub-heading"><h3>Education</h3><div class="underline"></div></div>
         </div>
         <br>
 
@@ -558,6 +376,7 @@ html, body { overflow-x: hidden; }
       </div>
 
       <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7 ftco-animate text-center">
             <h2>Not sure where <span>AI fits</span> in your business?</h2>
@@ -568,6 +387,7 @@ html, body { overflow-x: hidden; }
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
 
@@ -576,7 +396,6 @@ html, body { overflow-x: hidden; }
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Let's talk</h2>
             <p>Tell me how your business runs today and what's slowing it down. I'll reply within one working day.</p>
           </div>
@@ -670,16 +489,18 @@ html, body { overflow-x: hidden; }
     <script src="js/main.js"></script>
 
     <script>
-      // Hero typing animation: types each phrase, pauses, deletes, moves to the next.
+      // Hero typing animation. The slider clones the hero, so every copy is updated.
       (function () {
-        var el = document.getElementById('typing-animation');
-        if (!el) return;
         var phrases = ['AI Consultant', 'Data Strategist', 'AI Workflow Designer', 'Solution Builder'];
         var p = 0, i = 0, deleting = false;
+        function render(text) {
+          var els = document.querySelectorAll('.typing-animation');
+          for (var k = 0; k < els.length; k++) els[k].textContent = text;
+        }
         function tick() {
           var word = phrases[p];
           i += deleting ? -1 : 1;
-          el.textContent = word.slice(0, i);
+          render(word.slice(0, i));
           var delay = deleting ? 50 : 110;
           if (!deleting && i === word.length) { deleting = true; delay = 1500; }
           else if (deleting && i === 0) { deleting = false; p = (p + 1) % phrases.length; delay = 300; }

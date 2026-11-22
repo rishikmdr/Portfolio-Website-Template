@@ -1,0 +1,160 @@
+/* Site-specific styles for Sahil Kamdar's site, shared by every page. */
+
+html, body { overflow-x: hidden; }
+
+/* ---------- About ---------- */
+.about-mf .about-img img { margin-left: 10px; }
+
+.skill-mf .progress {
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+/* ---------- Hero typing animation ---------- */
+.typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+  min-height: 45px;
+  display: inline-block;
+}
+.typing-animation::after {
+  content: "|";
+  color: #ffbd39;
+  margin-left: 2px;
+  animation: blink 0.8s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ---------- Service cards (home) ---------- */
+a.services-1 { color: inherit; text-decoration: none; }
+.services-1 { height: 100%; display: flex; flex-direction: column; cursor: pointer; }
+.services-1 .desc { flex: 1; display: flex; flex-direction: column; }
+.services-1 .desc p { color: rgba(255,255,255,.7); font-size: 15px; margin-top: 30px; }
+.services-1 .price {
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffbd39;
+}
+.services-1 .price small { display: block; font-size: 12px; font-weight: 400; color: rgba(255,255,255,.6); letter-spacing: 1px; text-transform: uppercase; }
+.services-1 .step { font-size: 12px; letter-spacing: 3px; color: rgba(255,255,255,.5); text-transform: uppercase; }
+.services-1 .more { display: block; margin-top: 14px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
+.services-1:hover .desc p, .services-1:hover .price, .services-1:hover .price small,
+.services-1:hover .step, .services-1:hover .more, .services-1:hover ul { color: #000; }
+.services-1 ul { padding-left: 18px; text-align: left; color: rgba(255,255,255,.75); font-size: 14px; }
+
+/* ---------- Experience / education sub-headings ---------- */
+.resume-wrap ul { padding-left: 18px; }
+.sub-heading { width: 100%; text-align: center; }
+.sub-heading h3 { font-size: 34px; font-weight: 300; color: #fff; margin-bottom: 0; }
+
+/* ---------- Deliverables and sample engagements ---------- */
+.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
+.zoom-effect:hover { transform: scale(1.04); }
+.deliverable { margin-bottom: 30px; }
+.deliverable img { width: 100%; border-radius: 6px; box-shadow: 0 20px 40px -20px rgba(0,0,0,.6); }
+.deliverable h3 { font-size: 18px; margin-top: 18px; color: #fff; }
+.deliverable p { color: rgba(255,255,255,.65); font-size: 15px; }
+
+.case-card {
+  background: rgba(255,255,255,.05);
+  border-left: 3px solid #ffbd39;
+  padding: 26px 26px 18px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.case-card .tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffbd39;
+  margin-bottom: 8px;
+}
+.case-card h3 { font-size: 19px; color: #fff; margin-bottom: 4px; }
+.case-card .client { font-size: 14px; color: rgba(255,255,255,.55); display: block; margin-bottom: 14px; }
+.case-card dt { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,.5); font-weight: 500; }
+.case-card dd { color: rgba(255,255,255,.85); font-size: 15px; margin-bottom: 10px; }
+.illustrative-note { color: rgba(255,255,255,.5); font-size: 14px; }
+
+/* ---------- Service detail pages ---------- */
+.page-hero { padding: 170px 0 70px; background: radial-gradient(ellipse at 70% 20%, #2a2a2a 0%, #000 60%); }
+.page-hero .crumbs { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.5); }
+.page-hero .crumbs a { color: #ffbd39; }
+.page-hero h1 { font-size: 52px; font-weight: 700; color: #fff; margin: 14px 0 16px; }
+.page-hero h1 span { color: #ffbd39; }
+.page-hero .lead { font-size: 20px; color: rgba(255,255,255,.8); max-width: 760px; }
+.page-hero .range { display: inline-block; margin: 20px 0 30px; padding: 6px 16px; border: 1px solid #ffbd39; border-radius: 30px; color: #ffbd39; font-size: 15px; }
+
+.detail-section { padding: 70px 0; }
+.detail-section h2 { font-size: 30px; font-weight: 600; color: #fff; margin-bottom: 26px; }
+.detail-section p, .detail-section li { color: rgba(255,255,255,.75); font-size: 16px; }
+.check-list { list-style: none; padding: 0; }
+.check-list li { position: relative; padding-left: 30px; margin-bottom: 12px; }
+.check-list li:before { content: "\2713"; position: absolute; left: 0; color: #ffbd39; font-weight: 700; }
+
+.package {
+  background: #1a1a1a;
+  padding: 32px 28px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid transparent;
+}
+.package.featured { border-top-color: #ffbd39; }
+.package .tier { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,.55); }
+.package .amount { font-size: 40px; font-weight: 700; color: #ffbd39; margin: 6px 0 4px; }
+.package .delivery { font-size: 14px; color: rgba(255,255,255,.55); margin-bottom: 18px; }
+.package ul { padding-left: 18px; flex: 1; }
+.package .btn { margin-top: 18px; }
+.popular { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; background: #ffbd39; color: #000; padding: 2px 8px; margin-left: 6px; }
+
+.steps { counter-reset: step; }
+.step-item { position: relative; padding-left: 64px; margin-bottom: 30px; }
+.step-item:before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute; left: 0; top: 0;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: #ffbd39; color: #000; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.step-item h3 { font-size: 18px; color: #fff; margin-bottom: 4px; }
+
+.other-service {
+  display: block; width: 100%;
+  background: #1a1a1a; padding: 24px; margin-bottom: 30px;
+  color: #fff; border-left: 3px solid #ffbd39;
+}
+.other-service:hover { background: #ffbd39; color: #000; }
+.other-service small { display: block; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+.other-service strong { font-size: 18px; }
+
+.cta-band { padding: 70px 0; background: #111; text-align: center; }
+.cta-band h2 { color: #fff; font-size: 32px; }
+.cta-band h2 span { color: #ffbd39; }
+
+/* ---------- Phones ---------- */
+@media (max-width: 767px) {
+  #home-section .slider-text .text h2 { font-size: 20px !important; line-height: 1.5; }
+  .about-mf .about-img img { max-width: 160px; margin: 0 auto; display: block; }
+  .about-info p { margin-bottom: 6px; }
+  .sub-heading h3 { font-size: 26px; }
+  .page-hero { padding: 130px 0 50px; }
+  .page-hero h1 { font-size: 36px; }
+  .page-hero .lead { font-size: 17px; }
+  .package { margin-bottom: 24px; }
+}
+
+/* Hide the template's faded background words behind headings. */
+.heading-section h1.big { display: none; }
