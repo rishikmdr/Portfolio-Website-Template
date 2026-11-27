@@ -158,3 +158,8 @@ a.services-1 { color: inherit; text-decoration: none; }
 
 /* Hide the template's faded background words behind headings. */
 .heading-section h1.big { display: none; }
+
+/* ---------- Selected work ---------- */
+.work-group { margin-bottom: 30px; }
+.work-group-title { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+.work-group-sub { font-size: 15px; opacity: .75; margin-bottom: 22px; }
