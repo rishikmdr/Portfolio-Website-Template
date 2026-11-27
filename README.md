@@ -2,7 +2,7 @@
 
 Personal website for my data and AI consulting practice: AI opportunity audits, AI workflow blueprints, data and AI solution builds, and advisory calls.
 
-Built on a free one-page HTML/CSS/JavaScript portfolio template by [Colorlib](https://colorlib.com) (CC BY 3.0, so the footer credit stays).
+Built on a free one-page HTML/CSS/JavaScript portfolio template by [Colorlib](https://colorlib.com) (CC BY 3.0, so a small credit stays in the footer).
 
 ## Sections
 

@@ -227,3 +227,4 @@ a:hover, a:focus { color: var(--navy); }
   .sk-cred li { border-right: 0; padding-right: 0; }
   .sk-cred li::before { content: "— "; color: var(--accent-ink); }
 }
+.ftco-footer .credit { font-size: 11px; opacity: .55; }
