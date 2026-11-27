@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rishikmdr.github.io/Portfolio-Website-Template/sitemap.xml
