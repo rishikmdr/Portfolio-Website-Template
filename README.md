@@ -6,13 +6,26 @@ Built on a free one-page HTML/CSS/JavaScript portfolio template by [Colorlib](ht
 
 ## Sections
 
-- **Home:** headline and calls to action
-- **About:** profile, strengths and tool stack
-- **Services:** four service cards; each opens its own page
-- **Experience:** roles, education and certification
-- **Contact:** phone, email, LinkedIn
+The home page follows a consulting story, top to bottom:
 
-Service pages (`consulting.html`, `ai-audit.html`, `ai-workflow-blueprint.html`, `ai-solution-build.html`) each have: who it's for, what you get, example deliverables, three packages with prices, how it works, two illustrative sample engagements, and links to the other services.
+1. **Hero:** positioning, credibility line, and the two calls to action.
+2. **Experience at a glance:** four static figures taken from the CV (no animated counters).
+3. **Selected work:** four case studies. Each card leads with the result; "Read the case study" opens the challenge, my role, the solution, scale and outcome.
+4. **Three ways to engage:** AI Opportunity Assessment, AI Solution Blueprint, AI & Data Delivery Leadership.
+5. **How I work:** five steps plus a responsible-AI note.
+6. **Experience and leadership:** roles, capabilities, tools, education and awards.
+7. **Why work with me:** verifiable trust points. A commented-out slot is ready for real testimonials.
+8. **Contact:** a short enquiry form that opens the visitor's email app with the message filled in.
+
+Service pages: `ai-audit.html`, `ai-workflow-blueprint.html`, `delivery-leadership.html`.
+`consulting.html` and `ai-solution-build.html` now redirect to `delivery-leadership.html`, so old links keep working.
+
+## Updating content
+
+- Text lives directly in the `.html` files. Case studies are the `<article class="sk-case">` blocks in `index.html`.
+- Design tokens (colours, radius) are at the top of `css/site.css`.
+- `js/site.js` handles the enquiry form and sends analytics events for any element with `data-track`, once you add a GA4 or Google Tag Manager snippet.
+- Look for `TODO (Sahil)` comments for places that need your input: testimonials, a booking link, case study evidence, and analytics.
 
 ## Run it locally
 
