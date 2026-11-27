@@ -74,7 +74,7 @@ a:hover, a:focus { color: var(--navy); }
 .sk-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
 .sk-ctas .btn { padding: 14px 22px; font-weight: 500; }
 .sk-portrait { position: relative; max-width: 380px; margin: 0 auto; }
-.sk-portrait img { width: 100%; border-radius: 14px; box-shadow: var(--shadow); display: block; }
+.sk-portrait img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; box-shadow: var(--shadow); display: block; }
 .sk-portrait .chip {
   position: absolute; background: #fff; border: 1px solid var(--line); border-radius: 10px;
   box-shadow: var(--shadow); padding: 12px 16px; font-size: 13px; color: var(--muted); line-height: 1.35;
@@ -228,3 +228,13 @@ a:hover, a:focus { color: var(--navy); }
   .sk-cred li::before { content: "— "; color: var(--accent-ink); }
 }
 .ftco-footer .credit { font-size: 11px; opacity: .55; }
+/* Keep the hero labels clear of the face */
+.sk-portrait .chip.c2 { bottom: -26px; right: -72px; }
+.sk-portrait .chip.c1 { top: 22px; }
+@media (max-width: 991.98px) { .sk-portrait .chip.c2 { right: -8px; bottom: -22px; } .sk-portrait { margin-bottom: 30px; } }
+@media (max-width: 991.98px) {
+  .sk-portrait { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 0; }
+  .sk-portrait img { flex: 0 0 100%; }
+  .sk-portrait .chip, .sk-portrait .chip.c1, .sk-portrait .chip.c2 { position: static; flex: 1 1 0; max-width: none; padding: 10px 12px; }
+  .sk-portrait .chip strong { font-size: 16px; }
+}
